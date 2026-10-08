@@ -42,3 +42,11 @@ def find_student(student_id):
             return student
 
     return None
+
+def get_average_age():
+    if not students:
+        return 0
+
+    total_age = sum(student["age"] for student in students)
+    average_age = total_age / len(students)
+    return average_age

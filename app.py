@@ -38,6 +38,9 @@ def main():
     else:
         print("Student not found")
 
+from students import get_average_age
 
 if __name__ == "__main__":
     main()
+    print("\nAverage Age of Students:", get_average_age())
+
